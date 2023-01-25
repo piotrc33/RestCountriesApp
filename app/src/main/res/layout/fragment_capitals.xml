@@ -4,8 +4,8 @@
     android:id="@+id/capitalsFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="50px"
-    android:layout_marginHorizontal="40px"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="20dp"
     tools:context=".capitals.CapitalsFragment">
 
     <TextView
@@ -17,9 +17,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="match_parent" />
 
 </FrameLayout>

@@ -39,7 +39,8 @@ android {
 }
 
 dependencies {
-//    implementation 'androidx.core:core-ktx:+'
+    // Glide for loading images
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
 
     // Navigation
     def nav_version = "2.5.0"

@@ -26,8 +26,8 @@ class CapitalsAdapter(private val countries: List<Country>) :
     }
 
     override fun onBindViewHolder(holder: CapitalsViewHolder, position: Int) {
-        holder.countryNameTV.text = countries[position].name
-        holder.countryCapitalTV.text = countries[position].capital
+        holder.countryNameTV.text = countries[position].name.common
+        holder.countryCapitalTV.text = countries[position].capital.getOrElse(0) {"N/A"}
     }
 
 }

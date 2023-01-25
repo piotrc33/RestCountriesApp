@@ -13,7 +13,7 @@
         tools:layout="@layout/fragment_capitals" />
     <fragment
         android:id="@+id/flagsFragment"
-        android:name="com.example.restcountriesapp.FlagsFragment"
-        android:label="fragment_flags"
+        android:name="com.example.restcountriesapp.flags.FlagsFragment"
+        android:label="Countries and Flags"
         tools:layout="@layout/fragment_flags" />
 </navigation>

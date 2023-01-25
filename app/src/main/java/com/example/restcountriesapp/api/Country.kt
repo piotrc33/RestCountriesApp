@@ -1,7 +1,11 @@
 package com.example.restcountriesapp.api
 
-data class  Country(
-    var name: String,
-    var capital: String,
-    var independent: Boolean
+import com.google.gson.annotations.SerializedName
+
+data class Country(
+    var name: Name,
+    var capital: List<String>,
+    var flag: String
 )
+
+data class Name(val common: String)
