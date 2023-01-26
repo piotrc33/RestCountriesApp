@@ -14,7 +14,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
-
     private lateinit var viewModel: CountriesViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this)[CountriesViewModel::class.java]
 
-        // Setting the default fragment
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFragment.navController

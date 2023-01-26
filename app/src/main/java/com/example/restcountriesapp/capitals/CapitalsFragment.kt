@@ -41,42 +41,10 @@ class CapitalsFragment : Fragment() {
 
         }
 
-        // Logging interceptor
-//        val logging = HttpLoggingInterceptor()
-//        logging.setLevel(HttpLoggingInterceptor.Level.BODY)
-//        val client = OkHttpClient.Builder()
-//            .addInterceptor(logging)
-//            .build()
-//
-//        // Retrofit
-//        val retrofit = Retrofit.Builder()
-//            .baseUrl(countriesBaseUrl)
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .client(client) // adding logging interceptor
-//            .build()
-//
-//        val api = retrofit.create(RestCountriesApi::class.java)
-//
-//        CoroutineScope(Dispatchers.Main).launch {
-//            val countries = getData(api)
-//
-//            val adapter = CapitalsAdapter(countries)
-//            binding.recyclerView.layoutManager = LinearLayoutManager(context)
-//            binding.recyclerView.adapter = adapter
-//        }
-
         binding = FragmentCapitalsBinding.inflate(inflater, container, false)
         recyclerView = binding.recyclerView
 
         return binding.root
     }
-
-//    private suspend fun getData(api: RestCountriesApi): List<Country> {
-//        return withContext(Dispatchers.IO) {
-//            val response = async { api.getCountries() } // here is the problem!!
-//            val result = response.await()
-//            return@withContext result!!
-//        }
-//    }
 
 }
